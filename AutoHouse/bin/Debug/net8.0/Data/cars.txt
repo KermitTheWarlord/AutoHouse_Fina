@@ -1,0 +1,5 @@
+Toyota,Corolla,2020,25000
+BMW,320i,2018,30000
+Mercedes,C200,2019,28000
+Audi,A4,2021,35000
+Volkswagen,Passat,2017,20000

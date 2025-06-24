@@ -1,0 +1,5 @@
+﻿Ivan,Petrov,0888123456,ivan.petrov@example.com
+Maria,Ivanova,0888234567,maria.ivanova@example.com
+Georgi,Gorilov,0899123456,georgi.gorilov@example.com
+Elena,Nikolova,0899234567,elena.nikolova@example.com
+Stoyan,Dimitrov,0889456123,stoyan.dimitrov@example.com
