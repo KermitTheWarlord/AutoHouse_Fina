@@ -1,5 +1,0 @@
-﻿Petur,Nikolov,Salesperson,0889345678,p.nikolov@autohouse.bg
-Daniel,Stoqnov,Technician,0889567890,d.stoyanov@autohouse.bg
-Anna,Marinova,Manager,0889678901,a.marinova@autohouse.bg
-Iliq,Aleksandrov,Salesperson,0889789012,i.aleksandrov@autohouse.bg
-Katya,Petkova,ServiceAdvisor,0889890123,k.petkova@autohouse.bg
