@@ -12,3 +12,19 @@ C:\Users\tonys\source\repos\AutoHouse\AutoHouse.Data\obj\Debug\net8.0\refint\Aut
 C:\Users\tonys\source\repos\AutoHouse\AutoHouse.Data\obj\Debug\net8.0\AutoHouse.Data.pdb
 C:\Users\tonys\source\repos\AutoHouse\AutoHouse.Data\obj\Debug\net8.0\AutoHouse.Data.genruntimeconfig.cache
 C:\Users\tonys\source\repos\AutoHouse\AutoHouse.Data\obj\Debug\net8.0\ref\AutoHouse.Data.dll
+C:\Users\tonys\source\repos\AutoHouse\AutoHouse.Data\obj\Debug\net8.0\AutoHouse.Data.sourcelink.json
+C:\Users\tonys\Desktop\autohouse fina\AutoHouse.Data\bin\Debug\net8.0\AutoHouse.Data.deps.json
+C:\Users\tonys\Desktop\autohouse fina\AutoHouse.Data\bin\Debug\net8.0\AutoHouse.Data.runtimeconfig.json
+C:\Users\tonys\Desktop\autohouse fina\AutoHouse.Data\bin\Debug\net8.0\AutoHouse.Data.dll
+C:\Users\tonys\Desktop\autohouse fina\AutoHouse.Data\bin\Debug\net8.0\AutoHouse.Data.pdb
+C:\Users\tonys\Desktop\autohouse fina\AutoHouse.Data\obj\Debug\net8.0\AutoHouse.Data.csproj.AssemblyReference.cache
+C:\Users\tonys\Desktop\autohouse fina\AutoHouse.Data\obj\Debug\net8.0\AutoHouse.Data.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\tonys\Desktop\autohouse fina\AutoHouse.Data\obj\Debug\net8.0\AutoHouse.Data.AssemblyInfoInputs.cache
+C:\Users\tonys\Desktop\autohouse fina\AutoHouse.Data\obj\Debug\net8.0\AutoHouse.Data.AssemblyInfo.cs
+C:\Users\tonys\Desktop\autohouse fina\AutoHouse.Data\obj\Debug\net8.0\AutoHouse.Data.csproj.CoreCompileInputs.cache
+C:\Users\tonys\Desktop\autohouse fina\AutoHouse.Data\obj\Debug\net8.0\AutoHouse.Data.sourcelink.json
+C:\Users\tonys\Desktop\autohouse fina\AutoHouse.Data\obj\Debug\net8.0\AutoHouse.Data.dll
+C:\Users\tonys\Desktop\autohouse fina\AutoHouse.Data\obj\Debug\net8.0\refint\AutoHouse.Data.dll
+C:\Users\tonys\Desktop\autohouse fina\AutoHouse.Data\obj\Debug\net8.0\AutoHouse.Data.pdb
+C:\Users\tonys\Desktop\autohouse fina\AutoHouse.Data\obj\Debug\net8.0\AutoHouse.Data.genruntimeconfig.cache
+C:\Users\tonys\Desktop\autohouse fina\AutoHouse.Data\obj\Debug\net8.0\ref\AutoHouse.Data.dll

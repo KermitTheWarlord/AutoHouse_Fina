@@ -34,7 +34,6 @@ namespace AutoHouse.Core
             }
         }
 
-        // CRUD Operations:
         public async Task<Cars> AddCar(string make, string model, int year, decimal price)
         {
             var car = new Cars { Make = make, Model = model, Year = year, Price = price };

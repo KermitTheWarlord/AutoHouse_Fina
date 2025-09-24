@@ -75,12 +75,27 @@ namespace AutoHouse.Core
                        .GroupBy(s => s.Customer.FirstName + " " + s.Customer.LastName)
                        .ToDictionaryAsync(g => g.Key, g => g.Count());
 
-        public async Task<List<Sales>> GetSalesByCustomer(int customerId)
+        public async Task<List<Sales>> GetSalesByCustomerId(int customerId)
+    => await db.Sales
+        .Include(s => s.Car)
+        .Include(s => s.Customer)
+        .Include(s => s.Employee)
+        .Where(s => s.CustomerId == customerId)
+        .ToListAsync();
+
+        public async Task<List<Sales>> GetAllSales()
             => await db.Sales
-                       .Include(s => s.Car)
-                       .Include(s => s.Customer)
-                       .Include(s => s.Employee)
-                       .Where(s => s.CustomerId == customerId)
-                       .ToListAsync();
+                .Include(s => s.Car)
+                .Include(s => s.Customer)
+                .Include(s => s.Employee)
+                .ToListAsync();
+
+        public async Task<List<Sales>> GetSalesByCarId(int carId)
+            => await db.Sales
+                .Include(s => s.Car)
+                .Include(s => s.Customer)
+                .Include(s => s.Employee)
+                .Where(s => s.CarId == carId)
+                .ToListAsync();
     }
 }

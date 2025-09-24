@@ -11,24 +11,22 @@ namespace AutoHouse.Data
         [Required]
         public int CarId { get; set; }
         [ForeignKey(nameof(CarId))]
-        public Cars Car { get; set; }          // The car that was sold in this sale
+        public Cars Car { get; set; }          
 
         [Required]
         public int CustomerId { get; set; }
         [ForeignKey(nameof(CustomerId))]
-        public Customers Customer { get; set; } // The customer who bought the car
+        public Customers Customer { get; set; }
 
         public int? EmployeeId { get; set; }
         [ForeignKey(nameof(EmployeeId))]
-        public Employees Employee { get; set; } // (Optional) Employee who handled the sale
+        public Employees Employee { get; set; } 
 
         [Required]
-        public DateTime Date { get; set; }     // Date of sale
+        public DateTime Date { get; set; }     
 
         [Required]
         [Range(0, double.MaxValue)]
-        public decimal Price { get; set; }     // Sale price
-
-        // No collections here; this is a linking entity in one-to-many relations
+        public decimal Price { get; set; }    
     }
 }

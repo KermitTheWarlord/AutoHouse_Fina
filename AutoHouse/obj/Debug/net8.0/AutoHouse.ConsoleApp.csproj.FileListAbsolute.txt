@@ -161,3 +161,4 @@ C:\Users\tonys\source\repos\AutoHouse\AutoHouse\bin\Debug\net8.0\Data\Employees.
 C:\Users\tonys\source\repos\AutoHouse\AutoHouse\bin\Debug\net8.0\Data\employeeservices.txt
 C:\Users\tonys\source\repos\AutoHouse\AutoHouse\bin\Debug\net8.0\Data\sales.txt
 C:\Users\tonys\source\repos\AutoHouse\AutoHouse\bin\Debug\net8.0\Data\services.txt
+C:\Users\tonys\source\repos\AutoHouse\AutoHouse\obj\Debug\net8.0\AutoHouse.ConsoleApp.sourcelink.json

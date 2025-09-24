@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "iobOfr3RE6Q=",
+  "dgSpecHash": "mvwkubXHaJs=",
   "success": true,
-  "projectFilePath": "C:\\Users\\tonys\\source\\repos\\AutoHouse\\AuthoHouse.Core\\AuthoHouse.Core.csproj",
+  "projectFilePath": "C:\\Users\\tonys\\Desktop\\autohouse fina\\AuthoHouse.Core\\AuthoHouse.Core.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\tonys\\.nuget\\packages\\azure.core\\1.38.0\\azure.core.1.38.0.nupkg.sha512",
     "C:\\Users\\tonys\\.nuget\\packages\\azure.identity\\1.11.4\\azure.identity.1.11.4.nupkg.sha512",

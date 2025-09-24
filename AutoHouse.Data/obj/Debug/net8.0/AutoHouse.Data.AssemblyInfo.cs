@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("AutoHouse.Data")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a4f12e6df2fcc929b93b18ca1b395d4b6c782334")]
 [assembly: System.Reflection.AssemblyProductAttribute("AutoHouse.Data")]
 [assembly: System.Reflection.AssemblyTitleAttribute("AutoHouse.Data")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

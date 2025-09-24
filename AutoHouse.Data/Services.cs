@@ -8,12 +8,11 @@ namespace AutoHouse.Data
         public int Id { get; set; }
 
         [Required]
-        public string Name { get; set; }        // Service name (e.g., "Oil Change", "Технически преглед")
+        public string Name { get; set; }        
 
-        public string Description { get; set; } // Description/details of the service
+        public string Description { get; set; }
 
-        // Navigation:
-        public ICollection<CarsServices> CarsServices { get; set; }         // Many-to-many with Car
-        public ICollection<EmployeesServices> EmployeesServices { get; set; } // Many-to-many with Employee
+        public ICollection<CarsServices> CarsServices { get; set; }         
+        public ICollection<EmployeesServices> EmployeesServices { get; set; } 
     }
 }

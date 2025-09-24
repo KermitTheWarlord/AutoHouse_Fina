@@ -1,6 +1,0 @@
-# Visual Studio workspace cache
-.vs/
-
-# Build output
-bin/
-obj/

@@ -4,25 +4,24 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace AutoHouse.Data
 {
-    public class Cars  // Following the CinemaCenter naming style (class name in plural)
+    public class Cars  
     {
-        [Key]  // Primary key
+        [Key]  
         public int Id { get; set; }
 
         [Required]
-        public string Make { get; set; }       // e.g., car manufacturer (марка)
+        public string Make { get; set; }      
 
         [Required]
-        public string Model { get; set; }      // e.g., model name (модел)
+        public string Model { get; set; }    
 
-        public int Year { get; set; }          // year of manufacture
+        public int Year { get; set; }        
 
         [Required]
         [Range(0, int.MaxValue)]
-        public decimal Price { get; set; }     // price of the car
+        public decimal Price { get; set; }   
 
-        // Navigation properties:
-        public ICollection<CarsServices> CarsServices { get; set; }  // Many-to-many with Service
-        public ICollection<Sales> Sales { get; set; }                // One-to-many with Sale (if a car can be sold)
+        public ICollection<CarsServices> CarsServices { get; set; }  
+        public ICollection<Sales> Sales { get; set; }                
     }
 }

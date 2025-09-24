@@ -1045,10 +1045,7 @@
           "Microsoft.EntityFrameworkCore.SqlServer": "9.0.5"
         },
         "runtime": {
-          "AutoHouse.Data.dll": {
-            "assemblyVersion": "1.0.0.0",
-            "fileVersion": "1.0.0.0"
-          }
+          "AutoHouse.Data.dll": {}
         }
       }
     }

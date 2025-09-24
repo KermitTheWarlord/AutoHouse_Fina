@@ -340,7 +340,7 @@ namespace AutoHouse.ConsoleApp
         private async Task ListSalesByCustomerMenu()
         {
             Console.Write("Customer ID: "); var cid = int.Parse(Console.ReadLine() ?? "0");
-            var list = await saleController.GetSalesByCustomer(cid);
+            var list = await saleController.GetSalesByCustomerId(cid);
             list.ForEach(s => Console.WriteLine($"{s.Id}: {s.Car.Make} on {s.Date:d}"));
             Console.WriteLine();
         }

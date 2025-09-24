@@ -13,7 +13,7 @@ namespace AutoHouse.Data
         [Required]
         public string LastName { get; set; }
 
-        public string Position { get; set; }     // e.g., "Salesperson", "Technician", etc.
+        public string Position { get; set; }    
 
         [Phone]
         public string PhoneNumber { get; set; }
@@ -22,7 +22,7 @@ namespace AutoHouse.Data
         public string Email { get; set; }
 
         // Navigation:
-        public ICollection<EmployeesServices> EmployeesServices { get; set; } // Many-to-many with Service
-        public ICollection<Sales> Sales { get; set; }    // One-to-many: an employee can handle many sales (e.g., as salesperson)
+        public ICollection<EmployeesServices> EmployeesServices { get; set; } 
+        public ICollection<Sales> Sales { get; set; }    
     }
 }
