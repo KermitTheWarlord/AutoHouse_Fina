@@ -26,7 +26,8 @@ namespace AutoHouse.WinFormsApp
                 customerController,
                 employeeController,
                 serviceController,
-                saleController
+                saleController,
+                db // <-- pass dbContext as last argument
             ));
         }
     }

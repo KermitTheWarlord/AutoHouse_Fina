@@ -17,7 +17,7 @@ namespace AutoHouse.Data.Migrations
         {
 #pragma warning disable 612, 618
             modelBuilder
-                .HasAnnotation("ProductVersion", "9.0.5")
+                .HasAnnotation("ProductVersion", "9.0.9")
                 .HasAnnotation("Relational:MaxIdentifierLength", 128);
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);
@@ -157,6 +157,41 @@ namespace AutoHouse.Data.Migrations
                     b.ToTable("EmployeesServices");
                 });
 
+            modelBuilder.Entity("AutoHouse.Data.Rental", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<int>("CarId")
+                        .HasColumnType("int");
+
+                    b.Property<int>("CustomerId")
+                        .HasColumnType("int");
+
+                    b.Property<DateTime>("EndDate")
+                        .HasColumnType("datetime2");
+
+                    b.Property<decimal>("PricePerDay")
+                        .HasColumnType("decimal(18,2)");
+
+                    b.Property<DateTime>("StartDate")
+                        .HasColumnType("datetime2");
+
+                    b.Property<decimal>("TotalPrice")
+                        .HasColumnType("decimal(18,2)");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("CarId");
+
+                    b.HasIndex("CustomerId");
+
+                    b.ToTable("Rentals");
+                });
+
             modelBuilder.Entity("AutoHouse.Data.Sales", b =>
                 {
                     b.Property<int>("Id")
@@ -248,6 +283,25 @@ namespace AutoHouse.Data.Migrations
                     b.Navigation("Employee");
 
                     b.Navigation("Service");
+                });
+
+            modelBuilder.Entity("AutoHouse.Data.Rental", b =>
+                {
+                    b.HasOne("AutoHouse.Data.Cars", "Car")
+                        .WithMany()
+                        .HasForeignKey("CarId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("AutoHouse.Data.Customers", "Customer")
+                        .WithMany()
+                        .HasForeignKey("CustomerId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Car");
+
+                    b.Navigation("Customer");
                 });
 
             modelBuilder.Entity("AutoHouse.Data.Sales", b =>

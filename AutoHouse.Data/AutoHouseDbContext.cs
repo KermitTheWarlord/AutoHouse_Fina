@@ -13,6 +13,8 @@ namespace AutoHouse.Data
         public DbSet<Cars> Cars { get; set; }
         public DbSet<Customers> Customers { get; set; }
         public DbSet<Employees> Employees { get; set; }
+        public DbSet<Rental> Rentals { get; set; }
+
         public DbSet<Services> Services { get; set; }
         public DbSet<Sales> Sales { get; set; }
         public DbSet<CarsServices> CarsServices { get; set; }

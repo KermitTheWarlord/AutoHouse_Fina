@@ -11,13 +11,15 @@ namespace AutoHouse.WinFormsApp
         private readonly EmployeeController employeeController;
         private readonly ServiceController serviceController;
         private readonly SaleController saleController;
+        private readonly AutoHouse.Data.AutoHouseDbContext dbContext;
 
         public MainForm(
             CarController carController,
             CustomerController customerController,
             EmployeeController employeeController,
             ServiceController serviceController,
-            SaleController saleController)
+            SaleController saleController,
+            AutoHouse.Data.AutoHouseDbContext dbContext) // <-- add this
         {
             InitializeComponent();
             this.carController = carController;
@@ -25,6 +27,7 @@ namespace AutoHouse.WinFormsApp
             this.employeeController = employeeController;
             this.serviceController = serviceController;
             this.saleController = saleController;
+            this.dbContext = dbContext; // <-- store it for later use
         }
 
         private void btnAddData_Click(object sender, EventArgs e)
@@ -44,6 +47,11 @@ namespace AutoHouse.WinFormsApp
             );
             viewForm.ShowDialog();
         }
+        private void btnRentals_Click(object sender, EventArgs e)
+        {
+            var rentalForm = new RentalForm(dbContext, carController, customerController);
+            rentalForm.ShowDialog();
+        }
 
         private void MainForm_Load(object sender, EventArgs e)
         {
@@ -57,7 +65,7 @@ namespace AutoHouse.WinFormsApp
 
         private void MainForm_Paint(object sender, PaintEventArgs e)
         {
-           
+
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)

@@ -5,6 +5,8 @@
         private System.ComponentModel.IContainer components = null;
         private Button btnAddData;
         private Button btnViewData;
+        private Button btnRentals; // NEW BUTTON
+        private PictureBox pictureBox1;
 
         protected override void Dispose(bool disposing)
         {
@@ -20,6 +22,7 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
             btnAddData = new Button();
             btnViewData = new Button();
+            btnRentals = new Button();
             pictureBox1 = new PictureBox();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
@@ -46,13 +49,24 @@
             btnViewData.UseVisualStyleBackColor = true;
             btnViewData.Click += btnViewData_Click;
             // 
+            // btnRentals
+            // 
+            btnRentals.Location = new Point(90, 200);
+            btnRentals.Margin = new Padding(3, 4, 3, 4);
+            btnRentals.Name = "btnRentals";
+            btnRentals.Size = new Size(150, 50);
+            btnRentals.TabIndex = 2;
+            btnRentals.Text = "Rentals";
+            btnRentals.UseVisualStyleBackColor = true;
+            btnRentals.Click += btnRentals_Click;
+            // 
             // pictureBox1
             // 
             pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
             pictureBox1.Location = new Point(21, 22);
             pictureBox1.Name = "pictureBox1";
             pictureBox1.Size = new Size(307, 55);
-            pictureBox1.TabIndex = 2;
+            pictureBox1.TabIndex = 3;
             pictureBox1.TabStop = false;
             pictureBox1.Click += pictureBox1_Click;
             // 
@@ -63,6 +77,7 @@
             BackColor = Color.DarkBlue;
             ClientSize = new Size(325, 280);
             Controls.Add(pictureBox1);
+            Controls.Add(btnRentals);
             Controls.Add(btnViewData);
             Controls.Add(btnAddData);
             FormBorderStyle = FormBorderStyle.FixedDialog;
@@ -78,6 +93,5 @@
             ResumeLayout(false);
 
         }
-        private PictureBox pictureBox1;
     }
 }
